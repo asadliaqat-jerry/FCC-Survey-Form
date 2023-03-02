@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <!-- CONTAINER -->
+
+    <div class="container">
+      <!-- Heading and Description -->
+      <div class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+
+      <!-- FORM -->
+      <form id="survey-form">
+        <!-- First Fieldset -->
+        <fieldset>
+          <label id="name-label">Name</label>
+          <input
+            name="name"
+            type="text"
+            id="name"
+            placeholder="Enter Your Name"
+            class="form-control"
+            required
+          />
+
+          <label id="email-label">Email</label>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            class="form-control"
+            required
+          />
+
+          <label id="number-label">Age</label>
+          <input
+            name="number"
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="13"
+            max="100"
+            class="form-control"
+          />
+        </fieldset>
+
+        <!-- Second Fieldset -->
+        <fieldset>
+          <!-- First Dropdown -->
+          <label id="dropdown-label"
+            >Which option best describes your current role?</label
+          >
+          <select id="dropdown" class="form-control">
+            <option value="">Select Current Role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer Not To Say</option>
+            <option value="5">Others</option>
+          </select>
+
+          <!-- Radio Buttons -->
+          <label>Would you recommend freeCodeCamp to a friend?</label>
+          <label>
+            <input
+              type="radio"
+              name="yes-no-maybe"
+              value="yes"
+              class="radio-input"
+              checked
+            />
+            YES</label
+          >
+          <label>
+            <input
+              type="radio"
+              name="yes-no-maybe"
+              value="no"
+              class="radio-input"
+            />
+            NO</label
+          >
+          <label>
+            <input
+              type="radio"
+              name="yes-no-maybe"
+              value="maybe"
+              class="radio-input"
+            />
+            MAY BE</label
+          >
+
+          <!-- Second Dropdown -->
+          <label id="dropdown-label"
+            >What is your favorite feature of freeCodeCamp?</label
+          >
+          <select id="dropdown" class="form-control">
+            <option value="">Select an Option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+
+          <!-- Checkboxes -->
+          <label id="checkbox-label"
+            >What would you like to see improved?</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Front-end Projects"
+              class="input-checkbox"
+            />Front-end Projects</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Back-end Projects"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Data Visualization"
+              class="input-checkbox"
+            />Data Visualization</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Challenges"
+              class="input-checkbox"
+            />Challenges</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Open Source Community"
+              class="input-checkbox"
+              checked
+            />Open Source Community</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Gitter help rooms"
+              class="input-checkbox"
+            />Gitter help rooms</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Videos"
+              class="input-checkbox"
+            />Videos</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="City Meetups"
+              class="input-checkbox"
+            />City Meetups</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Wiki"
+              class="input-checkbox"
+            />Wiki</label
+          >
+
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Forum"
+              class="input-checkbox"
+              checked
+            />Forum</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              required
+              value="Additional Courses"
+              class="input-checkbox"
+            />Additional Courses</label
+          >
+
+          <!-- Textarea -->
+          <label id="textarea-label">
+            <textarea
+              id="textarea"
+              rows="3"
+              cols="30"
+              placeholder="Enter Your Comments here"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
